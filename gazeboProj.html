@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gazebo Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/profilePic.jpg" alt="" /></span><span class="title">Ariunaa Burentugs Portfolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Robotics.html">Robotics</a></li>
+						<li><a href="CFD.html">Computational Fluid Dynamics</a></li>
+						<li><a href="Coding.html">Coding</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Gazebo Projects</h1>
+							<!-- <span class="image left"><img src="images/rumba.png" alt="" /></span> -->
+							
+							<p><b>Gazebo tutorials series:</b><br>
+							Gazebo has a bunch of tutorials intended to teach you how to navigate the simulation environment and how to use the UI. Here is the link to the <a href="https://gazebosim.org/docs/harmonic/tutorials">tutorial docs</a>.</p>
+							<span class="image left"><img src="images/gazeboBot.png" alt="" /></span>
+							<p><b>Building a simulated robot:</b>
+								<br>Simulated robots and worlds are described with .sdf(Simulation Description Format) files. For the moment, a simple robot with 3 wheels is ok. We can read the .sdf files via <code>gz sim FILE_NAME.sdf</code><br>
+								We can describe the robot manually via these .sdf files, but using already existing markets and modifying the files seems to be the way.
+							</p>
+							<!-- <span class="image left"><img src="images/gazeboBot.png" alt="" /></span> -->
+							<p><b>Moving the robot:</b>
+								<br>We can move the robot by listening to ros2 topics, or in this case we move the robot by listening to the topic where keyboard presses can be interpreted.<br>
+								<code>gz topic -e -t /keyboard/keypress</code>
+							</p>
+							<!-- <span class="image left"><img src="images/gazeboBot.png" alt="" /></span> -->
+							<p><b>Sensors:</b>
+								<br>We can communicate to the simulated environment using sensors. Sensors can be used via plugins and they publish the necessary information to certain topics that can be subscribed to. This is where to ROS2 connection becomes very clear.
+							</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						
+						<section>
+							<h2>Get in touch</h2>
+							<ul class="icons">
+								<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ajil.bur.ariunaa@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								<!-- <li><a href="https://github.com/ABurentugs" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li> -->
+								
+								
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>Ariunaa Burentugs</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
